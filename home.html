@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+  </head>
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <title>La Liga</title>
+  </head>
+  <body>
+    <div>
+      <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+          <p>Webs Equipos</p>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.athletic-club.eus">
+                <img src="./JPGs/A. Bilbao.png" alt="AB" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.atleticodemadrid.com">
+                <img src="./JPGs/A Madrid.png" alt="AM" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.osasuna.es">
+                <img src="./JPGs/Osasuna.png" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.cadizcf.es">
+                <img src="./JPGs/Cadiz.png" alt="" class="logo2"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.elchecf.es">
+                <img src="./JPGs/Elche.png" alt="" class="logo3"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.fcbarcelona.es">
+                <img src="./JPGs/Barcelona2.png" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.getafecf.com">
+                <img src="./JPGs/Getafe.jpeg" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.gironafc.cat">
+                <img src="./JPGs/Girona.jpeg" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.rayovallecano.es">
+                <img src="./JPGs/Rayo.png" alt="" class="logo4"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.rccelta.es/index.php/es">
+                <img src="./JPGs/Celta.png" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.rcdespanyol.com">
+                <img src="./JPGs/Espanyol.png" alt="" class="logo2"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.rcdmallorca.es">
+                <img src="./JPGs/Mallorca.png" alt="" class="logo2"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.realbetisbalompie.es">
+                <img src="./JPGs/Betis.png" alt="" class="logo3"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.realmadrid.com">
+                <img src="./JPGs/RM.png" alt="" class="logo2"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.realsociedad.eus">
+                <img src="./JPGs/RSociedad.png" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.realvalladolid.es">
+                <img src="./JPGs/Valladolid.jpeg" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.sevillafc.es">
+                <img src="./JPGs/Sevilla.jpeg" alt="" class="logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.udalmeriasad.com">
+                <img src="./JPGs/Almeria.png" alt="" class="logo2"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.valenciacf.com">
+                <img src="./JPGs/Valencia.png" alt="" class="logo2"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.villarrealcf.es">
+                <img src="./JPGs/Villareal2.png" alt="" class="logo2"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="spinner_load" id="loader"></div>
+    <header>
+      <div>
+        <nav class="navbar navbar-expand-sm bg-dark">
+          <div class="container">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/games.html"
+                  ><p class="items">Resultado Partidos</p></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/standings.html"
+                  ><p class="items">Tabla de Posiciones</p></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Pages/stactics.html"
+                  ><p class="items">Estadísticas</p></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                  Idioma</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><img src="./JPGs/Flag1.jpeg" alt="" class="flag1">Español</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="./JPGs/flag-united-kingdom_1f1ec-1f1e7.png" alt="" class="flag1">English</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div>
+      <img src="./JPGs/laliga-v-1200x1200.jpg" alt="LaLiga" class="Liga" />
+    </div>
+    <h1>2022-2023</h1>
+    <div class="Box1">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./JPGs/RM2.jpg" class="d-block w-75" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="carousel2">Real Madrid</p>
+              <p class="carousel3">
+                Con un febrero y comienzos de marzo maratónicos, <br />
+                incluyendo 3 Clásicos en 35 días(Copa del Rey y la Liga).
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./JPGs/_GP29137.jpeg" class="d-block w-75" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="carousel2">FC Barcelona</p>
+              <p class="carousel3">
+                Primeros de la clasificación, a mitad de temporada.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./JPGs/Real Sociedad2.jpeg"
+              class="d-block w-100 h-50"
+              alt=""
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="carousel2">Real Sociedad</p>
+              <p class="carousel3">
+                Imanol:"... hemos hechos una buena primera ronda <br />
+                pero no podemos confiarnos...".
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./JPGs/AM3.jpg" class="d-block w-100" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="carousel2">Atlético de Madrid</p>
+              <p class="carousel3">
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./JPGs/Villareal2.jpeg" class="d-block w-75" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="carousel2">Villarreal</p>
+              <p class="carousel3">
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./JPGs/Betis2.jpeg" class="d-block w-75" alt="" />
+            <div class="carousel-caption d-none d-md-block">
+              <p class="carousel2">Real Betis</p>
+              <p class="carousel3">
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="Box2">
+        <div class="card w-100">
+          <div class="card-body">
+            <img src="./JPGs/Mundial_Clubes.jpeg" class="card-img-top" alt="..." />
+            <h5 class="card-title">Mundial de Clubes de la FIFA</h5>
+            <a href="https://www.fifa.com/es/tournaments/mens/clubworldcup" class="btn btn-primary">Saber más!!</a>
+          </div>
+        </div>
+        <div class="card w-100">
+          <div class="card-body">
+            <img src="./JPGs/Champions.jpeg" class="card-img-top" alt="..." />
+            <h5 class="card-title">UEFA Champions League</h5>
+            <a href="https://es.uefa.com/uefachampionsleague/" class="btn btn-primary">Saber más!!</a>
+          </div>
+        </div>
+        <div class="card w-100">
+          <div class="card-body">
+            <img src="./JPGs/Europa League.jpeg" class="card-img-top" alt="..." />
+            <h5 class="card-title">UEFA Europa League</h5>
+            <a href="https://es.uefa.com/uefaeuropaleague/" class="btn btn-primary">Saber más!!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <nav class="navbar navbar-expand-sm bg-dark">
+          <div class="container">
+            <div>
+              <img
+                src="./JPGs/laliga-h-1200x1200.png"
+                class="logo7"
+                alt=""
+              />
+            </div>
+            <div class="Box10">
+              <ul class="nav-bar">
+                <li class="nav-item">
+                  <a href="https://www.facebook.com/LaLiga">
+                    <i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://twitter.com/laliga">
+                    <i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.instagram.com/laliga">
+                    <i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="http://www.youtube.com/user/laliga">
+                    <i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.linkedin.com/company/laliga">
+                    <i class="fa-brands fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/569198f0fc.js" crossorigin="anonymous"></script>
+    <script>
+      window.onload=function(){
+        let spinner=document.getElementById("loader");
+      }
+      loader.style.visibility = "hidden";
+      loader.style.opacity = "0"
+    </script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+    crossorigin="anonymous"></script>
+  </body>
+</html>

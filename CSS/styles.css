@@ -1,0 +1,206 @@
+/* nombre etiqueta {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+} */
+
+/* .+class {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+}  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+.Main, .Main2, .Main3 {
+    text-align: -webkit-center;
+}
+
+.logo3 {
+    width: 50px;
+    height: 50px;
+}
+
+.logo4 {
+    width: 40px;
+    height: 50px;
+}
+
+.logo5{
+    width: 60px;
+    height: 60px;
+    margin-bottom: -10px;
+}
+
+.logo6 {
+    width: 60px;
+    height: 50px;
+}
+
+.items{
+    color: white;
+}
+
+.items:hover{
+    color: black;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+.d-flex {
+    padding-bottom: 13px;
+}
+
+.btn-primary {
+    width: 175px;
+}
+.logo, .logo1{
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    margin-top: 15px;
+}
+
+tr {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.team, .team2, .resultado, .jornada {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.team {
+    text-align: end;
+    border-left: solid 2px black;
+    padding-left: 10px;
+}
+
+.team2 {
+    text-align: justify;
+    padding-right: 5px;
+    border-right: solid 2px black;
+}
+
+.resultado, .jornada {
+    text-align: center;
+    margin: 3px;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+
+.logo  {
+    margin-right: 5px;
+}
+
+.logo1 {
+    margin-left: 5px;
+}
+
+.filas {
+    margin: 10px;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.equipo {
+    text-align: justify;
+}
+
+.logo7 {
+    width: 70px;
+    height: 70px;
+    margin-top: -15px;
+}
+
+.legend {
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+.Box3, .Box4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.mb-6{
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+}
+
+.btn-primary {
+    margin-left: 100px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: end;
+}
+
+.Title {
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px;
+}
+
+.spinner_load{
+    border:20px solid rgb(252, 0, 0);
+    border-bottom: 20px  #080808;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    animation: loader 1.5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    margin: auto;
+}
+
+@keyframes loader {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.logo8 {
+    width: 125px;
+    height: 125px;
+    margin-top: -25px;
+ }
+
+.Box10 ul li{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: black;
+    margin: 5px;
+}
+
+.a1, .a2, .a3 {
+    display: none;
+}

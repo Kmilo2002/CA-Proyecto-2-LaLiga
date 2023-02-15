@@ -1,0 +1,152 @@
+/* nombre etiqueta {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+} */
+
+/* .+class {
+    propiedad: valor;
+    propiedad: valor;
+    propiedad: valor;
+}  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+body {
+    text-align: -webkit-center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo2 {
+    width: 40px;
+    height: 50px;
+}
+
+.logo3{
+    width: 60px;
+    height: 60px;
+    margin-bottom: -10px;
+}
+
+.logo4 {
+    width: 60px;
+    height: 50px;
+}
+
+.spinner_load{
+    border:20px solid rgb(252, 0, 0);
+    border-bottom: 20px  #080808;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    animation: loader 1.5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;
+    margin: auto;
+}
+
+@keyframes loader {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.container {
+    display: flex;
+    margin-top: 15px;
+}
+
+.items, .dropdown-toggle {
+    color: white;
+}
+
+.dropdown-toggle:hover, .items:hover {
+    color: black;
+    background-color: white;
+    margin: 5px;
+    border-radius: 20%;
+}
+
+.flag1 {
+    width: 30px;
+    height: 30px;
+    margin-right: 3px;
+}
+
+.flag1:hover {
+    color: black;
+    background-color: white;
+}
+
+.d-flex {
+    padding-bottom: 13px;
+}
+.Liga {
+    width: 250px;
+    height: 250px;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.carousel2{
+    font-size: 50px;
+    color: black;
+}
+
+.carousel3 {
+    font-size: 30px;
+    color: black;
+}
+
+.Box1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    padding: 20px;
+}
+
+.Box2{
+    margin-top: -5px;
+}
+.Box2 div{
+    margin: 5px;
+}
+
+.logo7 {
+    width: 125px;
+    height: 125px;
+    margin-top: -25px;
+ }
+
+.Box10 ul li{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: #000;
+    margin: 5px;
+}
