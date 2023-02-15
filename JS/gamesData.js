@@ -9,7 +9,7 @@ let alert4 = document.getElementById("alert4");
 
 function gamesTable(lechugas) {
   let tableBody = document.getElementById("bodyT");
-  tableBody.innerHTML = "";
+    tableBody.innerHTML = "";
   for (let b = 0; b < lechugas.length; b++) {
     let tr = document.createElement("tr");
 
@@ -212,8 +212,8 @@ function quitAlert() {
   alert4.style.display = "none";
 }
 
-function finished(games) {
-  if (partidos.status === "FINISHED") {
-    return true;
-  }
-}
+// function finished(games) {
+//   if (partidos.status === "FINISHED") {
+//     return true;
+//   }
+// }
