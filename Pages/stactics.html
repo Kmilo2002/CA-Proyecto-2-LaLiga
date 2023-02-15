@@ -9,6 +9,7 @@
     <title>La Liga</title>
   </head>
   <body class="Main3">
+    <div class="spinner_load" id="loader"></div>
     <div>
       <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid">
@@ -168,8 +169,16 @@
             </div>
         </nav>
       </div>
-      <script src="https://kit.fontawesome.com/569198f0fc.js" crossorigin="anonymous"></script>
     </footer>
+    <script>
+      window.onload = function (){
+        let loader = document.getElementById("loader")
+      }
+      loader.style.visibility = "hidden";
+      loader.style.opacity = "0"
+    </script>
+    <script src="../JS/statics.js"></script>
+    <script src="https://kit.fontawesome.com/569198f0fc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" 
     crossorigin="anonymous"></script>
