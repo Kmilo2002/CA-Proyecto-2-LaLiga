@@ -204,3 +204,7 @@ tr {
 .a1, .a2, .a3 {
     display: none;
 }
+
+.BodyT2 {
+    justify-content: center;
+}
