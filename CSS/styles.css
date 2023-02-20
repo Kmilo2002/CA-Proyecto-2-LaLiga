@@ -60,7 +60,9 @@
 
 .btn-primary {
     width: 175px;
+    margin-left: 100px;
 }
+
 .logo, .logo1{
     width: 35px;
     height: 35px;
@@ -128,8 +130,8 @@ tr {
 }
 
 .legend {
-    margin-top: 15px;
-    margin-bottom: -10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .Box3, .Box4 {
@@ -148,10 +150,6 @@ tr {
     width: 35%;
 }
 
-.btn-primary {
-    margin-left: 100px;
-}
-
 .buttons{
     display: flex;
     justify-content: end;
@@ -161,27 +159,6 @@ tr {
     font-size: 50px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 20px;
-}
-
-.spinner_load{
-    border:20px solid rgb(252, 0, 0);
-    border-bottom: 20px  #080808;
-    border-radius: 100%;
-    width: 150px;
-    height: 150px;
-    animation: loader 1.5s linear infinite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10000;
-    margin: auto;
-}
-
-@keyframes loader {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
 }
 
 .logo8 {
@@ -207,4 +184,45 @@ tr {
 
 .BodyT2 {
     justify-content: center;
+}
+ 
+.spn2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+#container {
+    width: 200px;
+    height: 200px;
+  }
+  
+  @keyframes animation {
+    0% {
+      stroke-dasharray: 1 98;
+      stroke-dashoffset: -105;
+    }
+    50% {
+      stroke-dasharray: 80 10;
+      stroke-dashoffset: -160;
+    }
+    100% {
+      stroke-dasharray: 1 98;
+      stroke-dashoffset: -300;
+    }
+  }
+  
+#spinner {
+    transform-origin: center;
+    animation-name: animation;
+    animation-duration: 1.2s;
+    animation-timing-function: cubic-bezier;
+    animation-iteration-count: infinite;
+  }
+
+.leagues {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto
 }

@@ -14,7 +14,18 @@
     <title>La Liga</title>
   </head>
   <body class="Main2">
-    <div class="spinner_load" id="loader"></div>
+    <div id="container" class="spn2">
+      <svg viewBox="0 0 100 100">
+        <defs>
+          <filter id="shadow">
+            <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+              flood-color="#070707"/>
+          </filter>
+        </defs>
+        <circle id="spinner" style="fill:transparent;stroke:#ff0101;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+    </svg>
+    </div>
+    <div>
     <div>
       <nav class="navbar navbar-expand-sm navbar-white">
         <div class="container-fluid">
@@ -167,6 +178,11 @@
         </nav>
       </div>
     </header>
+    <div class="leagues">
+      <button type="button" class="btn btn-primary" id="LaLiga">La Liga</button>
+      <button type="button" class="btn btn-primary" id="Ligue1">Ligue 1</button>
+      <button type="button" class="btn btn-primary" id="Premier">Premier League</button>
+    </div>
     <div>
       <p class="Title">Tabla de Posiciones</p>
     </div>
@@ -230,13 +246,15 @@
     </footer>
     <script src="https://kit.fontawesome.com/569198f0fc.js" crossorigin="anonymous"></script>
     <script src="../JS/standings.js"></script>
+    <script src="../JS/standingsLigue.js"></script>
+    <script src="../JS/standingsPremier.js"></script>
     <script src="../JS/standingsTable.js"></script>
     <script>
       window.onload = function (){
-        let loader = document.getElementById("loader")
+        let loader = document.getElementById("container")
       }
-      loader.style.visibility = "hidden";
-      loader.style.opacity = "0"
+      container.style.visibility = "hidden";
+      container.style.opacity = "0"
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"

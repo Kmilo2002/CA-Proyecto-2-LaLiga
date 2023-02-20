@@ -1,5 +1,11 @@
 let partidos = games.matches;
 
+//Llamadas de funciones
+gamesTable(partidos);
+// getData("https://api.football-data.org/v2/competitions/2014/matches?season=2022")
+
+
+//Variables Scoop Global
 let gamesF = document.getElementById("formGroupExampleInput");
 let arrayTeams = [];
 let alert1 = document.getElementById("alert1");
@@ -7,6 +13,39 @@ let alert2 = document.getElementById("alert2");
 let alert3 = document.getElementById("alert3");
 let alert4 = document.getElementById("alert4");
 
+//Fecth
+// function getData(url) {
+//   const cors = "https://cors-anywhere.herokuapp.com/";
+//   fetch(url, {
+//     method: "GET",
+//     headers: new Headers ({
+//       "X-Auth-Token":"7141c0e024d646f197df4c965baf4529",
+//       "Content-Type": "application/json",
+//       "Access-Control-Allow-Origin": "*"
+//     })
+//   })
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data)
+//     let partidos = data.matches
+//     gamesTable(partidos)
+
+//     let search = document.getElementById("formGroupExampleInput");
+//     search.addEventListener("keyup", () => {
+//     gamesFilters(partidos);
+
+//     let search2 = document.getElementById("formGroupExampleInput2");
+//     search2.addEventListener("keyup", () => {
+//     matchdays(partidos);
+// });
+// });
+
+
+//   })
+//   .catch((err) => console.log(err))
+// }
+
+//Funciones
 function gamesTable(lechugas) {
   let tableBody = document.getElementById("bodyT");
     tableBody.innerHTML = "";
@@ -69,7 +108,7 @@ function gamesTable(lechugas) {
   }
 }
 
-gamesTable(partidos);
+
 
 function gamesFilters(games) {
   arrayTeams = games.filter((partidos) => {
@@ -217,3 +256,24 @@ function quitAlert() {
 //     return true;
 //   }
 // }
+
+let ligue1 = document.getElementById("Ligue1")
+ligue1.addEventListener("click", ()=>{
+  console.log(work)
+  document.innerHTML = ""
+  const url2 = ("https://api.football-data.org/v2/competitions/2015/matches?season=2022")
+  getData("url2")
+})
+
+let premier = document.getElementById("Premier")
+premier.addEventListener("click", ()=>{
+  console.log(Work)
+  document.innerHTML = ""
+  const url3 = ("https://api.football-data.org/v2/competitions/2021/matches?season=2022")
+  getData("url3") 
+})
+
+let liga = document.getElementById("LaLiga")
+liga.addEventListener("click", ()=>{
+  getData("https://api.football-data.org/v2/competitions/2014/matches?season=2022")
+})

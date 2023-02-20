@@ -9,7 +9,17 @@
     <title>La Liga</title>
   </head>
   <body class="Main3">
-    <div class="spinner_load" id="loader"></div>
+    <div id="container" class="spn2">
+      <svg viewBox="0 0 100 100">
+        <defs>
+          <filter id="shadow">
+            <feDropShadow dx="0" dy="0" stdDeviation="1.5" 
+              flood-color="#070707"/>
+          </filter>
+        </defs>
+        <circle id="spinner" style="fill:transparent;stroke:#ff0101;stroke-width: 7px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
+    </svg>
+    </div>
     <div>
       <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container-fluid">
@@ -212,10 +222,10 @@
     </footer>
     <script>
       window.onload = function (){
-        let loader = document.getElementById("loader")
+        let loader = document.getElementById("container")
       }
-      loader.style.visibility = "hidden";
-      loader.style.opacity = "0"
+      container.style.visibility = "hidden";
+      container.style.opacity = "0"
     </script>
     <script src="../JS/games.js"></script>
     <script src="../JS/gamesData.js"></script>
