@@ -31,13 +31,16 @@ let tabla2 = [];
 let tabla3 = [];
 
 //Llamada de funciones
-staticts(partidos);
-Table2(tabla);
-staticts2(partidos);
-Table3(tabla2);
-staticts3(partidos)
-Table4(tabla3)
+Main3(partidos);
 
+function Main3(games) {
+  staticts(games);
+  staticts2(games);
+  staticts3(games);
+  Table2(tabla);
+  Table3(tabla2);
+  Table4(tabla3);
+}
 
 function staticts(juegos) {
   for (let m = 0; m < juegos.length; m++) {
@@ -100,13 +103,13 @@ function staticts(juegos) {
   }
   estadisticas.sort((a, b) => b.avg - a.avg);
   tabla = estadisticas.slice(0, 5);
-
   console.log(estadisticas);
   console.log(tabla);
 }
 
 function Table2(juegos) {
-  let standingsBody = document.getElementById("BodyT2");
+  let staticsBody = document.getElementById("BodyT2");
+  staticsBody.innerHTML = "";
 
   for (let f = 0; f < juegos.length; f++) {
     let tr = document.createElement("tr");
@@ -142,7 +145,7 @@ function Table2(juegos) {
       tr.append(td);
     }
 
-    standingsBody.append(tr);
+    staticsBody.append(tr);
   }
 }
 
@@ -162,7 +165,7 @@ function staticts2(juegos) {
         teamVis2 = estadisticas2[p];
       }
     }
-    if (teamVis2 === undefined) {
+     if (teamVis2 === undefined) {
       estadisticas2.push({
         id: idVis2,
         name: nameVis2,
@@ -173,19 +176,17 @@ function staticts2(juegos) {
       teamVis2.matches++;
       teamVis2.goals += goalsVis2;
     }
-    
   }
 
- 
   estadisticas2.sort((a, b) => a.goals - b.goals);
   tabla2 = estadisticas2.slice(0, 5);
-  console.log(estadisticas2)
+  console.log(estadisticas2);
   console.log(tabla2);
-  
 }
 
 function Table3(juegos) {
-  let standingsBody = document.getElementById("BodyT3");
+  let staticsBody3 = document.getElementById("BodyT3");
+  staticsBody3.innerHTML = "";
 
   for (let h = 0; h < juegos.length; h++) {
     let tr = document.createElement("tr");
@@ -221,7 +222,7 @@ function Table3(juegos) {
       tr.append(td);
     }
 
-    standingsBody.append(tr);
+    staticsBody3.append(tr);
   }
 }
 
@@ -252,18 +253,17 @@ function staticts3(juegos) {
       teamVis3.matches++;
       teamVis3.goals += goalshome3;
     }
-    
   }
 
   estadisticas3.sort((a, b) => a.goals - b.goals);
   tabla3 = estadisticas3.slice(0, 5);
-  console.log(estadisticas3)
+  console.log(estadisticas3);
   console.log(tabla3);
-  
 }
 
 function Table4(juegos) {
-  let standingsBody = document.getElementById("BodyT4");
+  let staticsBody4 = document.getElementById("BodyT4");
+  staticsBody4.innerHTML = "";
 
   for (let h = 0; h < juegos.length; h++) {
     let tr = document.createElement("tr");
@@ -288,7 +288,6 @@ function Table4(juegos) {
     let goles = document.createElement("p");
     goles.innerHTML = juegos[h].goals;
 
-
     let Tableau = [posicion, logo, equipo, played, goles];
 
     for (let i = 0; i < Tableau.length; i++) {
@@ -297,6 +296,21 @@ function Table4(juegos) {
       tr.append(td);
     }
 
-    standingsBody.append(tr);
+    staticsBody4.append(tr);
   }
 }
+
+let laliga2 = document.getElementById("LaLiga");
+laliga2.addEventListener("click", () => {
+  Main3(partidos);
+});
+
+let ligue2 = document.getElementById("Ligue1");
+ligue2.addEventListener("click", () => {
+  Main3(partidosLigue);
+});
+
+let premier2 = document.getElementById("Premier");
+premier2.addEventListener("click", () => {
+  Main3(partidosPremier);
+});

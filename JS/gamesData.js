@@ -1,8 +1,12 @@
+
 let partidos = games.matches;
+let partidosLigue = gamesLigue.matches;
+let partidosPremier = gamesPremier.matches;
 
 //Llamadas de funciones
-gamesTable(partidos);
+// gamesTable(partidos);
 // getData("https://api.football-data.org/v2/competitions/2014/matches?season=2022")
+Main2(partidos)
 
 
 //Variables Scoop Global
@@ -46,9 +50,26 @@ let alert4 = document.getElementById("alert4");
 // }
 
 //Funciones
+function Main2(juegos) {
+  gamesTable(juegos)
+  let search = document.getElementById("formGroupExampleInput");
+  search.addEventListener("keyup", () => {
+  gamesFilters(juegos);
+});
+let search2 = document.getElementById("formGroupExampleInput2");
+search2.addEventListener("keyup", () => {
+  matchdays(juegos);
+});
+let newS = document.getElementById("newSearch");
+newS.addEventListener("click", () => {
+  newSearch();
+  gamesTable(juegos);
+});
+}
+
 function gamesTable(lechugas) {
   let tableBody = document.getElementById("bodyT");
-    tableBody.innerHTML = "";
+    tableBody.document.innerHTML = "";
   for (let b = 0; b < lechugas.length; b++) {
     let tr = document.createElement("tr");
 
@@ -124,12 +145,13 @@ function gamesFilters(games) {
     }
   });
 
+  
   console.log(arrayTeams);
   gamesTable(arrayTeams);
-
+  
   if (gamesF.value === "") {
     createAlert();
-    return gamesTable(partidos);
+    return gamesTable(games);
   }
   if (gamesF.value.length > 2) {
     quitAlert();
@@ -137,14 +159,10 @@ function gamesFilters(games) {
 
   if (arrayTeams.length === 0) {
     createAlert2();
-    return gamesTable(partidos);
+    return gamesTable(games);
   }
 }
 
-let search = document.getElementById("formGroupExampleInput");
-search.addEventListener("keyup", () => {
-  gamesFilters(partidos);
-});
 
 function matchdays(games) {
   let jornada2 = document.getElementById("formGroupExampleInput2").value;
@@ -166,10 +184,7 @@ function matchdays(games) {
   }
 }
 
-let search2 = document.getElementById("formGroupExampleInput2");
-search2.addEventListener("keyup", () => {
-  matchdays(partidos);
-});
+
 
 let rButtonsF = [];
 
@@ -210,6 +225,9 @@ function rButtons(games) {
     if (partidos.status === "SCHEDULED" && radioB.value === "Proximos") {
       return true;
     }
+    // if (partidos.status !== "SCHEDULED" && radioB.value === "Proximos") {
+    //   createAlert4();
+    // }
   });
 
   console.log(rButtonsF);
@@ -226,11 +244,6 @@ function newSearch() {
   quitAlert();
 }
 
-let newS = document.getElementById("newSearch");
-newS.addEventListener("click", () => {
-  newSearch();
-  gamesTable(partidos);
-});
 
 function createAlert() {
   alert1.style.display = "block";
@@ -244,6 +257,10 @@ function createAlert3() {
   alert3.style.display = "block";
 }
 
+function createAlert4() {
+  alert4.style.display = "block";
+}
+
 function quitAlert() {
   alert1.style.display = "none";
   alert2.style.display = "none";
@@ -251,29 +268,24 @@ function quitAlert() {
   alert4.style.display = "none";
 }
 
-// function finished(games) {
-//   if (partidos.status === "FINISHED") {
-//     return true;
-//   }
-// }
 
 let ligue1 = document.getElementById("Ligue1")
 ligue1.addEventListener("click", ()=>{
-  console.log(work)
-  document.innerHTML = ""
-  const url2 = ("https://api.football-data.org/v2/competitions/2015/matches?season=2022")
-  getData("url2")
+  // const url2 = ("https://api.football-data.org/v2/competitions/2015/matches?season=2022")
+  // getData("url2")
+  Main2(partidosLigue)
+
 })
 
 let premier = document.getElementById("Premier")
 premier.addEventListener("click", ()=>{
-  console.log(Work)
-  document.innerHTML = ""
-  const url3 = ("https://api.football-data.org/v2/competitions/2021/matches?season=2022")
-  getData("url3") 
+  // const url3 = ("https://api.football-data.org/v2/competitions/2021/matches?season=2022")
+  // getData("url3")
+  Main2(partidosPremier)
 })
 
 let liga = document.getElementById("LaLiga")
 liga.addEventListener("click", ()=>{
-  getData("https://api.football-data.org/v2/competitions/2014/matches?season=2022")
+  // getData("https://api.football-data.org/v2/competitions/2014/matches?season=2022")
+  Main2(partidos)
 })

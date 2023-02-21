@@ -51,7 +51,7 @@ function Main(datos) {
 
 function standingsTable(tomates) {
   let standingsBody = document.getElementById("BodyT");
-  document.innerHTML = "";
+  standingsBody.innerHTML = "";
 
   for (let f = 0; f < tomates.length; f++) {
     let tr = document.createElement("tr");
@@ -126,12 +126,10 @@ LaLiga.addEventListener("click",()=>{
 
 let Ligue1 = document.getElementById("Ligue1")
 Ligue1.addEventListener("click", ()=>{
-  document.innerHTML = "",
     Main(Ligue)
 })
 
 let premier = document.getElementById("Premier")
 premier.addEventListener("click", ()=>{
-  document.innerHTML = "",
   Main(Premier)
 })
