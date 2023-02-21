@@ -2,7 +2,7 @@
 Este es el segundo proyecto dentro del BootCamp de Campsite Academy.
 
 En este proyecto los alumnos debían confeccionar su segunda aplicación web, atilizando los conocimiento ya aprendidos de HTML y CSS e incorporandoles nuevas funcionalidades a través de JavaScript. La introducción del nuevo lenguaje de programación estuvo a cargo de la mentora, impartiendo los talleres necesarios para adquirir estos conocimientos.
-
+---
 # Etapas del Proyecto:
 Este proyecto estuvo dividido en dos etapas de desarrollo (Epic 1 y 2), a su vez estos Epics estuvieron divididos en dos etapas de trabajo (Sprint 1 y 2).
 Durante el Epic 1 se hizo la estructura básica de la aplicación y a través de los datos obtenidos de las APIs, comenzar a conformar las diferentes tablas que debían ser mostradas a los usuarios.
