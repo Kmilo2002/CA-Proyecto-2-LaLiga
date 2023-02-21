@@ -19,4 +19,5 @@ La aplicación se desarrollo en Visual Studio Code, dándole soporte con element
 
 ![2023-02-21 (1)](https://user-images.githubusercontent.com/122996393/220346270-d82c7787-5595-4f97-ba63-c846e35630bf.png)
 ---
+
 # Estructura de la Aplicación
