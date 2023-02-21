@@ -23,9 +23,7 @@
 // 10. Hacer console.log() para ver que todo está correcto.
 
 //Scoop Global
-let estadisticas = [];
-let estadisticas2 = [];
-let estadisticas3 = [];
+
 let tabla = [];
 let tabla2 = [];
 let tabla3 = [];
@@ -43,11 +41,12 @@ function Main3(games) {
 }
 
 function staticts(juegos) {
+  let estadisticas = [];
   for (let m = 0; m < juegos.length; m++) {
     if (juegos[m].status !== "FINISHED") {
       continue;
     }
-
+  
     let idLocal = juegos[m].homeTeam.id;
     let nameLocal = juegos[m].homeTeam.name;
     let goalsLocal = juegos[m].score.fullTime.homeTeam;
@@ -150,11 +149,12 @@ function Table2(juegos) {
 }
 
 function staticts2(juegos) {
+  let estadisticas2 = [];
   for (let x = 0; x < juegos.length; x++) {
     if (juegos[x].status !== "FINISHED") {
       continue;
     }
-
+    
     let idVis2 = juegos[x].awayTeam.id;
     let nameVis2 = juegos[x].awayTeam.name;
     let goalsVis2 = juegos[x].score.fullTime.awayTeam;
@@ -165,7 +165,7 @@ function staticts2(juegos) {
         teamVis2 = estadisticas2[p];
       }
     }
-     if (teamVis2 === undefined) {
+    if (teamVis2 === undefined) {
       estadisticas2.push({
         id: idVis2,
         name: nameVis2,
@@ -227,11 +227,12 @@ function Table3(juegos) {
 }
 
 function staticts3(juegos) {
+  let estadisticas3 = [];
   for (let x = 0; x < juegos.length; x++) {
     if (juegos[x].status !== "FINISHED") {
       continue;
     }
-
+    
     let idVis3 = juegos[x].awayTeam.id;
     let nameVis3 = juegos[x].awayTeam.name;
     let goalshome3 = juegos[x].score.fullTime.homeTeam;
