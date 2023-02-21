@@ -131,7 +131,7 @@ tr {
 }
 
 .legend {
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
@@ -225,5 +225,11 @@ tr {
 .leagues {
     padding-top: 15px;
     padding-bottom: 15px;
-    margin: auto
+    margin: auto;
+    margin-top: 175px;
 }
+
+.navbar-light {
+    background-color: white;
+}
+

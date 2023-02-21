@@ -211,9 +211,6 @@ function Table3(juegos) {
     let goles = document.createElement("p");
     goles.innerHTML = juegos[h].goals;
 
-    let average2 = document.createElement("p");
-    average2.innerHTML = juegos[h].avg;
-
     let Tableau = [posicion, logo, equipo, played, goles];
 
     for (let i = 0; i < Tableau.length; i++) {

@@ -1,4 +1,3 @@
-
 let partidos = games.matches;
 let partidosLigue = gamesLigue.matches;
 let partidosPremier = gamesPremier.matches;
@@ -6,8 +5,7 @@ let partidosPremier = gamesPremier.matches;
 //Llamadas de funciones
 // gamesTable(partidos);
 // getData("https://api.football-data.org/v2/competitions/2014/matches?season=2022")
-Main2(partidos)
-
+Main2(partidos);
 
 //Variables Scoop Global
 let gamesF = document.getElementById("formGroupExampleInput");
@@ -42,8 +40,12 @@ let alert4 = document.getElementById("alert4");
 //     search2.addEventListener("keyup", () => {
 //     matchdays(partidos);
 // });
+// let newS = document.getElementById("newSearch");
+// newS.addEventListener("click", () => {
+//   newSearch();
+//   gamesTable(juegos);
 // });
-
+// });
 
 //   })
 //   .catch((err) => console.log(err))
@@ -51,25 +53,25 @@ let alert4 = document.getElementById("alert4");
 
 //Funciones
 function Main2(juegos) {
-  gamesTable(juegos)
+  gamesTable(juegos);
   let search = document.getElementById("formGroupExampleInput");
   search.addEventListener("keyup", () => {
-  gamesFilters(juegos);
-});
-let search2 = document.getElementById("formGroupExampleInput2");
-search2.addEventListener("keyup", () => {
-  matchdays(juegos);
-});
-let newS = document.getElementById("newSearch");
-newS.addEventListener("click", () => {
-  newSearch();
-  gamesTable(juegos);
-});
+    gamesFilters(juegos);
+  });
+  let search2 = document.getElementById("formGroupExampleInput2");
+  search2.addEventListener("keyup", () => {
+    matchdays(juegos);
+  });
+  let newS = document.getElementById("newSearch");
+  newS.addEventListener("click", () => {
+    newSearch();
+    gamesTable(juegos);
+  });
 }
 
 function gamesTable(lechugas) {
   let tableBody = document.getElementById("bodyT");
-    tableBody.document.innerHTML = "";
+  tableBody.innerHTML = "";
   for (let b = 0; b < lechugas.length; b++) {
     let tr = document.createElement("tr");
 
@@ -129,8 +131,6 @@ function gamesTable(lechugas) {
   }
 }
 
-
-
 function gamesFilters(games) {
   arrayTeams = games.filter((partidos) => {
     if (
@@ -145,10 +145,9 @@ function gamesFilters(games) {
     }
   });
 
-  
   console.log(arrayTeams);
   gamesTable(arrayTeams);
-  
+
   if (gamesF.value === "") {
     createAlert();
     return gamesTable(games);
@@ -162,7 +161,6 @@ function gamesFilters(games) {
     return gamesTable(games);
   }
 }
-
 
 function matchdays(games) {
   let jornada2 = document.getElementById("formGroupExampleInput2").value;
@@ -183,8 +181,6 @@ function matchdays(games) {
     return gamesTable(partidos);
   }
 }
-
-
 
 let rButtonsF = [];
 
@@ -244,7 +240,6 @@ function newSearch() {
   quitAlert();
 }
 
-
 function createAlert() {
   alert1.style.display = "block";
 }
@@ -268,24 +263,22 @@ function quitAlert() {
   alert4.style.display = "none";
 }
 
-
-let ligue1 = document.getElementById("Ligue1")
-ligue1.addEventListener("click", ()=>{
+let ligue1 = document.getElementById("Ligue1");
+ligue1.addEventListener("click", () => {
   // const url2 = ("https://api.football-data.org/v2/competitions/2015/matches?season=2022")
   // getData("url2")
-  Main2(partidosLigue)
+  Main2(partidosLigue);
+});
 
-})
-
-let premier = document.getElementById("Premier")
-premier.addEventListener("click", ()=>{
+let premier = document.getElementById("Premier");
+premier.addEventListener("click", () => {
   // const url3 = ("https://api.football-data.org/v2/competitions/2021/matches?season=2022")
   // getData("url3")
-  Main2(partidosPremier)
-})
+  Main2(partidosPremier);
+});
 
-let liga = document.getElementById("LaLiga")
-liga.addEventListener("click", ()=>{
+let liga = document.getElementById("LaLiga");
+liga.addEventListener("click", () => {
   // getData("https://api.football-data.org/v2/competitions/2014/matches?season=2022")
-  Main2(partidos)
-})
+  Main2(partidos);
+});

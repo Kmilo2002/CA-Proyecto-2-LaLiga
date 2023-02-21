@@ -114,6 +114,7 @@ body {
 .Liga {
     width: 250px;
     height: 250px;
+    margin-top: 175px;
 }
 
 header ul li a{
@@ -162,4 +163,8 @@ header ul li a{
     font-size: 30px;
     color: #000;
     margin: 5px;
+}
+
+.navbar-light {
+    background-color: white;
 }
