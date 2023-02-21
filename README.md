@@ -18,6 +18,8 @@ La aplicación se desarrollo en Visual Studio Code, dándole soporte con element
 ![2023-02-21](https://user-images.githubusercontent.com/122996393/220327038-76cea612-fba9-41f1-9f8f-0ed39bcf7b06.png)
 
 ![2023-02-21 (1)](https://user-images.githubusercontent.com/122996393/220346270-d82c7787-5595-4f97-ba63-c846e35630bf.png)
----
 
+---
 # Estructura de la Aplicación
+Nuestra aplicación cuenta con 4 paginas:
+- Pagina principal 
