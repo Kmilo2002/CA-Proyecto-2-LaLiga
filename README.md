@@ -19,7 +19,7 @@ La aplicación se desarrollo en Visual Studio Code, dándole soporte con element
 
 ![2023-02-21 (1)](https://user-images.githubusercontent.com/122996393/220346270-d82c7787-5595-4f97-ba63-c846e35630bf.png)
 
-Al ser una aplicación web no necesita instalador, solo se necesita una terminal con acceso a internet y un navegador web, puesto que nuestra aplicación tendrá un soporte a través de Netlify, así que no es necesario descar ningún repositorio ni base de datos para que la aplicación funcione correctamente.
+Al ser una aplicación web no necesita instalador, solo se necesita una terminal con acceso a internet y un navegador web.
 
 ---
 # Estructura de la Aplicación
@@ -29,4 +29,9 @@ Nuestra aplicación cuenta con 4 paginas:
 
 En toda la aplicación tenemos presente dos (2) barras de navegación: una con los sitios web de cada uno de los equipos participantes en la Liga Santander 2022-2023 y otra que nos hace navegar a través de las diferentes páginas de nuestra aplicación. Además tenemos un pie de página con otros hipervínculos, que nos llevan a otras páginas como Facebook, Twitter, Youtube, etc.
 
-La aplicación es intuitiva y básica, no se necesitan descargar base de datos o repositorios para que la aplicación funcione correctamente ya que la misma tiene soporte a través de Netlify 
+La aplicación es intuitiva y básica, no se necesitan descargar base de datos o repositorios para que la aplicación funcione correctamente ya que la misma tiene soporte a través de Netlify y como está respaldada por base de datos que se actualizan en tiempo real, pueden ser consultadas a cualquier hora y en cualquier lugar, que mantendran la información siempre actualizada.
+
+---
+# FAQ
+¿Qué es esta aplicación?
+Es una aplicación web dedicada a la Liga Santander 2022-2023 y además 
