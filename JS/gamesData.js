@@ -90,12 +90,18 @@ function gamesTable(lechugas) {
     equipoLocal.innerHTML = lechugas[b].homeTeam.name;
     equipoLocal.classList.add("team");
 
-    let resultado = document.createElement("p");
-    resultado.innerHTML =
-      lechugas[b].score.fullTime.homeTeam +
-      "-" +
-      lechugas[b].score.fullTime.awayTeam;
-    resultado.classList.add("resultado");
+    let data = document.createElement("div")
+    let resultado = lechugas[b].score.fullTime.homeTeam +
+      " - " + lechugas[b].score.fullTime.awayTeam;
+    if (resultado === "null - null"){
+      resultado = "Programado"
+    } else {
+    resultado.textContent = lechugas[b].score.fullTime.homeTeam +
+      " - " + lechugas[b].score.fullTime.awayTeam
+    }
+    // resultado.classList.add("resultado")
+    data.append(resultado)
+    data.classList.add("resultado")
 
     let EquipoVis = document.createElement("p");
     EquipoVis.innerHTML = lechugas[b].awayTeam.name;
@@ -113,7 +119,7 @@ function gamesTable(lechugas) {
     let result = [
       equipoLocal,
       logo,
-      resultado,
+      data,
       logo1,
       EquipoVis,
       fecha.toLocaleString(),

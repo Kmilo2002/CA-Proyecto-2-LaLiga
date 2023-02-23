@@ -23,7 +23,6 @@
 // 10. Hacer console.log() para ver que todo está correcto.
 
 //Scoop Global
-
 let tabla = [];
 let tabla2 = [];
 let tabla3 = [];
