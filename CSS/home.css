@@ -18,6 +18,10 @@
     font-weight: bold;
 }
 
+body.body--dark {
+    background: #000
+  }
+  
 body {
     text-align: -webkit-center;
 }
